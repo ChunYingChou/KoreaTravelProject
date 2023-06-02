@@ -1,11 +1,10 @@
-# 2023 韓國旅遊推薦網站
+# 2023韓國旅遊推薦網站
 
-此專案使用基本的 html/CSS/JavaScript 並搭配套件 bootstrap、Font Awesome 等手刻一個靜態網頁，仿介紹韓國觀光的網站。
+此專案使用基本的html/CSS/JavaScript並搭配套件bootstrap、Font Awesome等手刻一個靜態網頁，仿介紹韓國觀光的網站。
 <br />
 <br />
 
 ## 線上部署後的網站
-
 https://koreatravel1.netlify.app/
 <br />
 <br />
@@ -19,37 +18,39 @@ https://koreatravel1.netlify.app/
   - 預約行程：連結到外部網頁
   - 關於我們：點擊後打開右邊的offcanvas介紹網頁中的基本資訊     
   <br />
-
-- <main>區塊的中間有4個遊玩主題
-
-  - 首爾韓國首都：點擊後會跳出 modal 介紹關於首爾的更多資訊
-  - 明洞購物區：點擊後會跳出 modal 介紹關於明洞的更多資訊
-  - 釜山自由行：點擊後會跳出 modal 介紹關於釜山的更多資訊
-  - 濟洲島渡假勝地：點擊後會跳出 modal 介紹關於濟洲島的更多資訊
-    <br />
+      
+- <main>區塊的中間有4個遊玩主題  
+  
+  - 首爾韓國首都：點擊後會跳出modal介紹關於首爾的更多資訊
+  - 明洞購物區：點擊後會跳出modal介紹關於明洞的更多資訊
+  - 釜山自由行：點擊後會跳出modal介紹關於釜山的更多資訊
+  - 濟洲島渡假勝地：點擊後會跳出modal介紹關於濟洲島的更多資訊
+  <br />
+  
 
 - <main>區塊的下方有介紹韓國地理位置
-
+  
   - 關於韓國的基本文字介紹
-  - 載入 Google map 可供縮放地圖查詢相關地理位置
-    <br />
+  - 載入Google map可供縮放地圖查詢相關地理位置
+  <br />
 
+  
 - <footer>區塊有4個主要social media
-
+  
   - facebook：連結到外部網頁 → 韓國觀光公社 - VisitKorea
   - instagram：連結到外部網頁 → visitseoul_official_tc
   - twitter：連結到外部網頁 → VisitKorea
   - youtube：連結到外部網頁 → 韓國觀光公社 台北支社
 
-- 網頁右下方有 arrow-up icon 可以點擊後回到最上層位置
+- 網頁右下方有arrow-up icon可以點擊後回到最上層位置
   <br />
   <br />
 
 ## 專案畫面
-
+  
 https://streamable.com/xh73nn
-<br />
-<br />
+  <br />
+  <br />
 
 ## 使用指南
 
@@ -58,24 +59,27 @@ https://streamable.com/xh73nn
    ```
    git clone https://github.com/ChunYingChou/KoreaTravelProject.git
    ```
-
+   
 2. 在終端機中輸入以下文字進入專案資料夾：
 
    ```
    cd KoreaTravelProject
    ```
-
-3. 在終端機中輸入以下便可以 Visual Studio Code 開啟專案：
+   
+3. 在終端機中輸入以下便可以Visual Studio Code開啟專案：
 
    ```
    code index.html
    ```
-
-4. 在 Visual Studio Code 中安裝延伸模組 Live Server 後在右下角點選"Go Live"
+   
+4. 在Visual Studio Code中安裝延伸模組Live Server後在右下角點選"Go Live"
+   
 5. 瀏覽器將會自動開啟 "http://localhost:5500/" ，即可瀏覽此專案。
-   <br />
-   <br />
+  <br />
+  <br />
+
 
 ## Contributor 專案開發人員
 
 - [Ashley Chou](https://github.com/ChunYingChou)
+
