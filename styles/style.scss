@@ -1,0 +1,350 @@
+$themecolor: #921aff;
+$origincolor: #5b5b5b;
+
+@font-face {
+  font-family: "myfont";
+  src: url("../華康秀風體.TTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "myfont";
+  scroll-behavior: smooth;
+}
+
+body {
+  img.fixed-image {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -5;
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+    align-items: center;
+    background-color: white;
+    // outline: 2px solid red;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+
+    nav {
+      width: 100%;
+
+      div.container-fluid {
+        span.title {
+          font-size: 2rem;
+          color: $origincolor;
+          padding: 0.5rem;
+          border: 3px dashed #ca8eff;
+          border-radius: 30px;
+        }
+        div.navbar-collapse {
+          justify-content: flex-end;
+          ul {
+            font-size: 1.5rem;
+            li {
+              margin-right: 2rem;
+              a {
+                color: $origincolor;
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: bold;
+                transition: all 0.3s ease;
+
+                &:hover {
+                  color: $themecolor;
+                }
+              }
+
+              i {
+                padding-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    div.offcanvas-end {
+      h5 {
+        font-family: "Noto Serif TC", serif;
+        font-weight: bolder;
+      }
+    }
+
+    div.offcanvas-body {
+      p {
+        font-family: "Noto Serif TC", serif;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style-type: circle;
+      }
+
+      li {
+        font-family: "Noto Serif TC", serif;
+        strong {
+          font-family: "Noto Serif TC", serif;
+        }
+        margin: 0;
+      }
+    }
+  }
+
+  main {
+    section.background-img {
+      min-height: 70vh;
+      // 設定背景圖片
+      background-image: url("../image/seoul.jpg");
+      background-color: white;
+      background-size: cover;
+      background-position: center;
+      transition: all 0.75s ease;
+      position: relative;
+      z-index: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div.filter {
+        width: 100%;
+        min-height: 70vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        z-index: -1;
+      }
+
+      h2 {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+
+    section.travel-theme {
+      width: 100%;
+      background-color: white;
+      padding: 2rem 1rem;
+      // outline: 3px solid red;
+
+      div.circles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div.modal-dialog {
+          h5 {
+            font-family: "Noto Serif TC", serif;
+          }
+
+          div.modal-body {
+            img {
+              width: 100%;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-family: "Noto Serif TC", serif;
+            }
+          }
+
+          div.modal-footer {
+            button {
+              font-family: "Playfair Display", serif;
+            }
+          }
+        }
+
+        div.circle {
+          padding: 1rem;
+          flex: 0 1 250px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            max-width: 100%;
+
+            height: 70%;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 0.7;
+              border: 2px solid $themecolor;
+              padding: 0.3rem;
+            }
+          }
+
+          p {
+            margin-top: 1rem;
+            font-size: 1.25rem;
+          }
+        }
+      }
+
+      h3 {
+        color: black;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+
+    section.background-container {
+      min-height: 70vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h3 {
+        font-size: 2rem;
+        color: white;
+        font-weight: lighter;
+      }
+    }
+
+    section.google-map {
+      background-color: white;
+      padding: 2.5rem 0;
+
+      iframe {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0 1rem;
+      }
+
+      h3 {
+        color: black;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+
+      p {
+        font-family: "Noto Serif TC", serif;
+        font-size: 1.3rem;
+        margin: 1rem 2rem;
+      }
+    }
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    section.logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+
+      img {
+        width: 10vw;
+        height: 10vh;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        font-weight: lighter;
+        color: white;
+      }
+    }
+
+    section.social-media {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 1rem;
+
+      a {
+        margin: 1rem;
+
+        i.fa-facebook {
+          color: #0080ff;
+        }
+
+        i.fa-instagram {
+          color: #d9006c;
+          // color: linear-gradient(to top right, #921aff, #d9006c);
+        }
+
+        i.fa-twitter {
+          color: #2894ff;
+        }
+
+        i.fa-youtube {
+          color: red;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: white;
+      padding: 1rem;
+    }
+
+    a.up-to-line {
+      i {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 3rem;
+        color: white;
+        text-shadow: 0.1em 0.1em 0.2em #333;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 400px) {
+//   header {
+//     section.logo {
+//       flex-direction: column;
+//       justify-content: flex-start;
+//       align-items: center;
+
+//       h1 {
+//         font-size: 1.5rem;
+//       }
+
+//       div.logo {
+//         img {
+//           width: 50vw;
+//         }
+//       }
+//     }
+
+//     nav {
+//       ul {
+//         display: flex;
+//         flex-direction: column;
+//         padding: 0;
+//       }
+//     }
+//   }
+// }
+
+@import "./login";

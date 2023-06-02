@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2023韓國旅遊推薦</title>
+    <!-- 載入Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 載入fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/c7704bf3c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 載入bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- 載入CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- 載入網站icon -->
+    <link rel="icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./image/bundohouse.jpg" alt="fixed-image" />
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img
+              src="./logo/undraw_travelers_re_y25a.svg"
+              alt=""
+              width="50"
+              height="40"
+              class="d-inline-block align-text-center"
+            />
+            <span class="title">2023韓國旅遊推薦</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="/"
+                  ><i class="fa-solid fa-earth-americas"></i>韓國旅遊</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html" target="_blank"
+                  ><i class="fa-solid fa-right-to-bracket"></i>會員登入</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://travel.liontravel.com/category/zh-tw/korea/index?gclid=CjwKCAjwvdajBhBEEiwAeMh1U3TIQICb2elAn6RNPls-04kso_aaF4XQnRZ_KLcsiVRzIdNX0TeiRBoCiBYQAvD_BwE"
+                  target="_blank"
+                  ><i class="fa-solid fa-book"></i>預約行程</a
+                >
+              </li>
+              <li class="nav-item">
+                <!-- 搭配offcanvas -->
+                <a
+                  class="nav-link"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  href="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                  ><i class="fa-solid fa-circle-question"></i>關於我們</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>    
+      </nav>
+
+      <!-- offcanvas效果 -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">關於此專案</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>使用基本的html/CSS/JavaSript手刻一個靜態網頁，仿介紹韓國觀光的網站，包含載入自製的favicon、中文字體。</p>
+          <p><i class="fa-brands fa-gratipay"></i>&nbsp;使用技術：</p>
+          <ul>
+            <li>HTML/CSS/JavaScript</li>
+            <li>SCSS</li>
+            <li>RWD</li>
+          </ul>
+          <p><i class="fa-brands fa-gratipay"></i>&nbsp;使用套件：</p>
+          <ul>
+            <li>bootstrap</li>
+            <li>Google Fonts</li>
+            <li>Font Awesome</li>
+          </ul>
+          <p><i class="fa-brands fa-gratipay"></i>&nbsp;設計功能：</p>
+          <ul>
+            <li>網頁右下角有<strong>HTML Bookmark</strong>功能的icon點擊後即可回到網頁最上層</li>
+            <li>增加了<strong>Canvas Nest</strong>做背景效果</li>
+            <li>網頁中的<strong>遊玩主題</strong>，游標移過有圖片縮放效果，點擊後呈現彈跳視窗可瀏覽詳細資訊</li>
+            <li><strong>會員登入</strong>是靜態網頁，模擬一般網站登入頁呈現的畫面（無串接後端API）</li>
+            <li><strong>預約行程</strong>和網頁最下方的<strong>社群媒體icon</strong>皆為外部連結</li>
+          </ul>
+          <p>此網頁的圖片和文字資訊皆來自unsplash、Pexels、unDraw、維基百科。</p>
+    </header>
+
+    <!-- HTML Bookmark-->
+    <main id="first-line">
+      <section class="background-img">
+        <div class="filter"></div>
+        <h2>
+          週末時光，連續假期，小資輕鬆遊韓國<br />立刻安排體驗一場韓流之旅
+        </h2>
+      </section>
+
+      <section class="travel-theme">
+        <h3>遊玩主題</h3>
+        <div class="circles">
+          <div
+            class="circle"
+            data-bs-toggle="modal"
+            data-bs-target="#capitalModal"
+          >
+            <img src="./image/seoul2.jpg" alt="韓國首爾" title="韓國首爾" />
+            <p>首爾，韓國首都</p>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="capitalModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i
+                    >&nbsp;首爾(Seoul)
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./image/Gangnam_Seoul_January_2009.jpg" alt="" />
+                  <p>
+                    是大韓民國首都及經濟、科技、文化中心，亦是朝鮮半島人口最多的城市。
+                  </p>
+
+                  <p>
+                    首爾是朝鮮王朝500年間的都城，有眾多古跡。朝鮮王朝時代的宮殿、宗廟和其他建築有：景福宮、昌德宮、秘苑、昌慶宮、慶熙宮、德壽宮、雲峴宮、宗廟、社稷、成均館、南大門、東大門、漢城城牆、南漢山城、北漢山城、貞陵、洪陵、宣靖陵、獻仁陵、泰康陵等等。
+                    其他古跡有夢村土城、風納土城、嵯峨山城、死六臣墓、奉恩寺、奉元寺、曹溪寺、獨立門、明洞天主教堂等。
+                  </p>
+                  <p>
+                    公園和旅遊設施有西大門獨立公園、獎忠壇公園、塔洞公園、樂天世界、孝昌公園、南山谷韓屋村、汝矣島公園、南山公園、奧林匹克公園、社稷公園、龍山家庭公園等。
+                    自然旅遊景點有北漢山國立公園、國立森林園、洪陵樹木園、水落山、仁王山、冠岳山、栗島候鳥棲息地。
+                  </p>
+                  <p>
+                    文化旅遊景點有首爾「國立現代美術館」（MMCA），興建於2009年，歷時5年，於2013年開幕。600年前是朝鮮王朝王室寺廟與辦事處，1920年日本殖民時，被蓋成軍醫院，1960年代朴正熙的情治國安局，現在是跨越時間空間「沒有圍牆的美術館」[26]。
+                    藝術旅遊景點有首爾漢南洞「三星美術館」（Leeum），最珍貴的館藏是13世紀高麗時代青瓷，三星以自身科技優勢，將館內導覽以「自動感應參觀者位置」提供展品文字及語言導覽，頗受好評。
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="circle"
+            data-bs-toggle="modal"
+            data-bs-target="#Myeong-dong-Modal"
+          >
+            <img
+              src="./image/cait-ellis-Erld-XTqXv0-unsplash.jpg"
+              alt="韓國明洞"
+              title="韓國明洞"
+            />
+            <p>明洞購物區</p>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Myeong-dong-Modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i
+                    >&nbsp;明洞(Myeong-dong)
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./image/Myeong-dong_Hawkers_201604.jpg" alt="" />
+                  <p>
+                    明洞，是韓國首爾市的一個著名商業區。位於漢江以北，接近南大門市場，行政上歸明洞管轄。
+                  </p>
+                  <p>
+                    明洞亦是首爾市內較多中國人聚居的地方，近中國駐韓大使館的街道匯集一些中國菜館及中華學校，但與其他國家的唐人街相比，規模較小。
+                  </p>
+                  <p>
+                    明洞較為類似日本的澀谷，有近數千多個化妝品及護膚品品專門店（如skin
+                    food、Nature
+                    Republic、MISSHA、菲詩小舖等）、時裝等，是首爾著名的景點，不過在明洞由於日本及中國旅客居多，所以有很多有日語、中文招牌及聘請僑民工作。而店外亦掛上「打折」、「正品」等簡體中文字作宣傳。有妝品店員工表示，七成以上營業額來自中國旅客，成為店內最重要的收入來源。而餐廳亦設有分註韓文和中文的菜單。
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="circle"
+            data-bs-toggle="modal"
+            data-bs-target="#Busan-Modal"
+          >
+            <img src="./image/Busan.jpg" alt="韓國釜山" title="韓國釜山" />
+            <p>釜山自由行</p>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Busan-Modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i
+                    >&nbsp;釜山(Busan)
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./image/Busannopicture.jpg" alt="" />
+                  <p>
+                    是韓國的一個廣域市，也是該國繼首爾之後的第二大城市及最大港口城市。
+                  </p>
+                  <p>
+                    釜山市被稱為大海、高山、大河和諧相融的「三抱之鄉」。此外，釜山有著一年四季從地下不斷湧出的泉水（60℃）的東萊溫泉和海雲台溫泉。這些泉水的水質在韓國是數一數二的。因此，釜山也被稱為「四抱之鄉」。
+                  </p>
+                  <p>
+                    釜山被稱為韓國的夏季首都。韓國國民都慕名來到釜山的6大海灘浴場。海雲台海灘以豪華酒店和狂歡節浮橋為名。海雲台的釜山水族館是韓國最大的水族館。海雲台迎月嶺迎月路為海雲台區著名的休閒步道，迎月路為釜山最浪漫的步道讓許多情侶慕名而來。
+                  </p>
+                  <p>
+                    廣安裏海灘是海雲台海灘的延伸的小海灘，沿岸有很多的咖啡廳、酒吧和餐館還有釜山著名的廣安大橋。此外，松島海灘的海洋纜車及雲彩足跡較為著名。
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="circle"
+            data-bs-toggle="modal"
+            data-bs-target="#Jeju-Island-Modal"
+          >
+            <img
+              src="./image/Jeju Island.jpg"
+              alt="韓國濟州島"
+              title="韓國濟州島"
+            />
+            <p>濟州島，渡假勝地</p>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="Jeju-Island-Modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i
+                    >&nbsp;濟州島(Jeju Island)
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./image/Jeju_Island_Seopjikoji.jpg" alt="" />
+                  <p>
+                    是韓國濟州特別自治道的本島，位於朝鮮半島西南，在朝鮮半島南部西南海域、東海和黃海之間，是韓國最大的島嶼及旅遊勝地。
+                  </p>
+                  <p>
+                    濟州島屬於溫和的副熱帶氣候，幾乎全年都適合來此旅遊。戶外運動愛好者可以造訪濟州島期間從事各種活動，從攀登韓國最高峰到欣賞沿海壯麗的日落和日出景觀，盡皆涵蓋其中。
+                  </p>
+                  <p>
+                    濟州島擁有許多不同類型的休閒活動，例如：天地淵瀑布、民俗自然史博物館、奧雪綠茶博物館、泰迪熊博物館、潛水艇觀光、愛情樂園等，非常適合到此觀光和度假玩樂。
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="background-container">
+        <h3>
+          心動不如馬上行動！<br />現在就開始規劃行程，找到最適合的方案吧！
+        </h3>
+      </section>
+
+      <section class="google-map">
+        <h3>韓國地理位置</h3>
+        <p>
+          韓國地勢北高南低，東高西低，其中三分之二是山地。北起黃龍山縱貫東海岸的太白山脈是韓國最長的山脈，全長約500公里，平均海拔1000米，構成韓半島南部的脊梁。由於東海波濤的侵蝕，太白山脈東坡是懸崖峭壁和岩石小島，西坡和南部較緩，形成平原和許多近海島嶼和小港灣。
+        </p>
+        <p>
+          韓國擁有3,000個大小島嶼。其中濟州島（1840平方公里）是韓國面積最大的島嶼，也是韓國主要的旅遊熱點之一。濟州火山島和熔岩洞2007年被列入世界遺產列表。韓國的其它主要島嶼包括巨濟島、江華島、珍島和南海島等。
+        </p>
+        <!-- 載入google map-->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202405.65365072855!2d126.80932922056951!3d37.5647615509752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2zU2VvdWwsIOWNl-mfkw!5e0!3m2!1szh-TW!2stw!4v1681383698937!5m2!1szh-TW!2stw"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="./logo/undraw_travelers_re_y25a.svg" alt="旅遊Logo" />
+        <h3>2023韓國旅遊推薦</h3>
+      </section>
+      <section class="social-media">
+        <a
+          href="https://www.facebook.com/big5chinese.visitkorea"
+          target="_blank"
+          ><i title="facebook" class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/visitseoul_official_tc/"
+          target="_blank"
+          ><i title="instagram" class="fa-brands fa-instagram fa-2xl"></i
+        ></a>
+        <a href="https://twitter.com/koreantravel" target="_blank"
+          ><i title="twitter" class="fa-brands fa-twitter fa-2xl"></i
+        ></a>
+        <a href="https://www.youtube.com/c/ktotaipeivideo" target="_blank"
+          ><i title="youtube" class="fa-brands fa-youtube fa-2xl"></i
+        ></a>
+      </section>
+      <p>Copyright © 2023 AshleyChou. All rights reserved.</p>
+
+      <!-- HTML Bookmark-->
+      <a class="up-to-line" href="#first-line"
+        ><i class="fa-solid fa-chevron-up fa-2xl"></i
+      ></a>
+    </footer>
+
+    <!-- Canvas Nest -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"
+      integrity="sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      color="146,26,255"
+      opacity="0.7"
+      count="399"
+      zIndex="0"
+    ></script>
+    <!--載入bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--載入JavaScript -->
+    <script src="./app.js"></script>
+  </body>
+</html>

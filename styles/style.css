@@ -1,0 +1,339 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "myfont";
+  src: url("../華康秀風體.TTF");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "myfont";
+  scroll-behavior: smooth;
+}
+
+body img.fixed-image {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -5;
+}
+body header {
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+body header nav {
+  width: 100%;
+}
+body header nav div.container-fluid span.title {
+  font-size: 2rem;
+  color: #5b5b5b;
+  padding: 0.5rem;
+  border: 3px dashed #ca8eff;
+  border-radius: 30px;
+}
+body header nav div.container-fluid div.navbar-collapse {
+  justify-content: flex-end;
+}
+body header nav div.container-fluid div.navbar-collapse ul {
+  font-size: 1.5rem;
+}
+body header nav div.container-fluid div.navbar-collapse ul li {
+  margin-right: 2rem;
+}
+body header nav div.container-fluid div.navbar-collapse ul li a {
+  color: #5b5b5b;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+body header nav div.container-fluid div.navbar-collapse ul li a:hover {
+  color: #921aff;
+}
+body header nav div.container-fluid div.navbar-collapse ul li i {
+  padding-right: 0.5rem;
+}
+body header div.offcanvas-end h5 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: bolder;
+}
+body header div.offcanvas-body p {
+  font-family: "Noto Serif TC", serif;
+}
+body header div.offcanvas-body ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: circle;
+}
+body header div.offcanvas-body li {
+  font-family: "Noto Serif TC", serif;
+  margin: 0;
+}
+body header div.offcanvas-body li strong {
+  font-family: "Noto Serif TC", serif;
+}
+body main section.background-img {
+  min-height: 70vh;
+  background-image: url("../image/seoul.jpg");
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.75s ease;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.background-img div.filter {
+  width: 100%;
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: -1;
+}
+body main section.background-img h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+body main section.travel-theme {
+  width: 100%;
+  background-color: white;
+  padding: 2rem 1rem;
+}
+body main section.travel-theme div.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.travel-theme div.circles div.modal-dialog h5 {
+  font-family: "Noto Serif TC", serif;
+}
+body main section.travel-theme div.circles div.modal-dialog div.modal-body img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+body main section.travel-theme div.circles div.modal-dialog div.modal-body p {
+  font-family: "Noto Serif TC", serif;
+}
+body main section.travel-theme div.circles div.modal-dialog div.modal-footer button {
+  font-family: "Playfair Display", serif;
+}
+body main section.travel-theme div.circles div.circle {
+  padding: 1rem;
+  flex: 0 1 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main section.travel-theme div.circles div.circle img {
+  max-width: 100%;
+  height: 70%;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+body main section.travel-theme div.circles div.circle img:hover {
+  opacity: 0.7;
+  border: 2px solid #921aff;
+  padding: 0.3rem;
+}
+body main section.travel-theme div.circles div.circle p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+body main section.travel-theme h3 {
+  color: black;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+body main section.background-container {
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body main section.background-container h3 {
+  font-size: 2rem;
+  color: white;
+  font-weight: lighter;
+}
+body main section.google-map {
+  background-color: white;
+  padding: 2.5rem 0;
+}
+body main section.google-map iframe {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+body main section.google-map h3 {
+  color: black;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+body main section.google-map p {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.3rem;
+  margin: 1rem 2rem;
+}
+body footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+body footer section.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+body footer section.logo img {
+  width: 10vw;
+  height: 10vh;
+  margin-bottom: 1.5rem;
+}
+body footer section.logo h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: white;
+}
+body footer section.social-media {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+body footer section.social-media a {
+  margin: 1rem;
+}
+body footer section.social-media a i.fa-facebook {
+  color: #0080ff;
+}
+body footer section.social-media a i.fa-instagram {
+  color: #d9006c;
+}
+body footer section.social-media a i.fa-twitter {
+  color: #2894ff;
+}
+body footer section.social-media a i.fa-youtube {
+  color: red;
+}
+body footer p {
+  font-size: 1.2rem;
+  color: white;
+  padding: 1rem;
+}
+body footer a.up-to-line i {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 3rem;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body section.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body section.login-form h1 {
+  font-size: 2rem;
+  font-family: "Noto Sans TC", sans-serif;
+}
+body section.login-form div.icon {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+body section.login-form div.icon img {
+  width: 15%;
+  border: 1px solid #d8dee4;
+  border-radius: 10px;
+}
+body section.login-form div.form {
+  border: 2px solid #d8dee4;
+  border-radius: 10px;
+  background-color: #f6f8fa;
+  min-width: 20%;
+  padding: 0.5rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+body section.login-form div.form div.line {
+  margin: 1rem 0;
+  width: 90%;
+}
+body section.login-form div.form div.line label {
+  display: block;
+  font-family: "Noto Sans TC", sans-serif;
+}
+body section.login-form div.form div.line input {
+  width: 100%;
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+}
+body section.login-form div.form div.line input:focus {
+  outline: none;
+  border: 3px solid #0969da;
+}
+body section.login-form div.form div.line div.forget-password {
+  display: flex;
+  justify-content: flex-end;
+}
+body section.login-form div.form div.line div.forget-password a {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  font-family: "Noto Sans TC", sans-serif;
+}
+body section.login-form div.form button {
+  margin: 1rem 0;
+  background-color: #5a5aad;
+  border: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+body section.login-form div.signup {
+  margin-top: 2rem;
+  border: 2px solid #d8dee4;
+  border-radius: 10px;
+  background-color: white;
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+body section.login-form div.signup p {
+  font-family: "Noto Sans TC", sans-serif;
+}
+body section.login-form div.signup p a {
+  font-family: "Noto Sans TC", sans-serif;
+}/*# sourceMappingURL=style.css.map */
