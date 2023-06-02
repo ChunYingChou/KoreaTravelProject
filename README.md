@@ -4,6 +4,11 @@
 <br />
 <br />
 
+## 線上部署後的網站
+https://koreatravel1.netlify.app/
+<br />
+<br />
+
 ## 專案介紹
 
 - <header>區塊的導覽列(Navbar)上有4個連結     
