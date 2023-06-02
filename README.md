@@ -5,22 +5,29 @@
 ## 專案介紹
 
 - <header>區塊的導覽列(Navbar)上有4個連結
+  
   - 韓國旅遊：點擊立即回到首頁
   - 會員登入：連結到會員登入頁面(此頁面僅是畫面，無串接後端API登入功能)
   - 預約行程：連結到外部網頁
   - 關於我們：點擊後打開右邊的offcanvas介紹網頁中的基本資訊
   
+  
 - <main>區塊的中間有4個遊玩主題
+  
   - 首爾韓國首都：點擊後會跳出modal介紹關於首爾的更多資訊
   - 明洞購物區：點擊後會跳出modal介紹關於明洞的更多資訊
   - 釜山自由行：點擊後會跳出modal介紹關於釜山的更多資訊
   - 濟洲島渡假勝地：點擊後會跳出modal介紹關於濟洲島的更多資訊
+  
 
 - <main>區塊的下方有介紹韓國地理位置
+  
   - 關於韓國的基本文字介紹
   - 載入Google map可供縮放地圖查詢相關地理位置
 
+  
 - <footer>區塊有4個主要social media
+  
   - facebook：連結到外部網頁 → 韓國觀光公社 - VisitKorea
   - instagram：連結到外部網頁 → visitseoul_official_tc
   - twitter：連結到外部網頁 → VisitKorea
@@ -31,7 +38,7 @@
 ## 專案畫面
 
 ### 網頁畫面
-![影片](https://streamable.com/xh73nn)
+https://streamable.com/xh73nn
 
 ## 使用指南
 
